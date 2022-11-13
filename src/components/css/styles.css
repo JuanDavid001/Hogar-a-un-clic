@@ -1,0 +1,156 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ 
+ /*General Styles*/
+
+:root{
+    --generalColor: #000000;
+    --white: #ffffff;
+    --greenbg: #04aa6d;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #f9f9f9;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--generalColor);
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+/*Navbar Styles*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: var(--greenbg);
+    grid-column: 1/-1;
+}
+
+nav a {
+    font-weight: 700;
+    color: var(--white);
+}
+
+.container-menu ul li {
+    margin: 0 1rem;
+}
+
+.title {
+    font-size: 1.3rem;
+}
+
+/*Form Styles*/
+
+form {
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    
+}
+
+form div {
+    padding: 0 1rem;
+}
+
+form div label {
+    padding: 0 0.5rem;
+}
+
+/*Card Styles*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-column: 1/-1;
+    background-color: #f1f1f1;
+}
+.card {
+    max-width: 250px;
+    /* border-left: #000000 solid 1px;
+    border-right: #000000 solid 1px; */
+    background-color: var(--white);
+    border-radius: 8px;
+    margin: 0.5rem;
+    grid-column: 1/3;
+    
+}
+
+.img-container img {
+    border-radius: 8px;
+    width: 100%;
+}
+.name-container {
+    padding: 0.3rem 0.3rem;
+    line-height: 0.9rem;
+}
+.name {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.price-container{
+    text-align: center;
+    line-height: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.info-container {
+    padding: 0.6rem 0.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Footer Styles*/
+
+footer{
+    background-color: var(--greenbg);
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: space-between;
+}
+
+footer, a{
+    color: var(--white);
+}
+
+.footer-logo-container, .links, .vis-links {
+    max-width: 33%;
+    
+} 
+.links {
+}
+
+.vis-links{
+    
+}
